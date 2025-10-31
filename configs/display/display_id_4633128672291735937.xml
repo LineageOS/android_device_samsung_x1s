@@ -1,5 +1,216 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <displayConfiguration>
+    <lightSensor>
+        <type>com.samsung.sensor.autobrightness</type>
+        <name>TMD4910 lux Sensor</name>
+    </lightSensor>
+    <screenBrightnessMap interpolation="linear">
+        <point>
+            <value>0.0</value>
+            <nits>2.0</nits>
+        </point>
+        <point>
+            <value>0.52469136</value>
+            <nits>420.0</nits> <!-- Maximum non-HBM brightness nits -->
+        </point>
+        <point>
+            <value>1.0</value>
+            <nits>800.0</nits>
+        </point>
+    </screenBrightnessMap>
+    <screenBrightnessDefault>0.48235294</screenBrightnessDefault>
+    <highBrightnessMode enabled="true">
+        <transitionPoint>0.52469136</transitionPoint>
+        <minimumHdrPercentOfScreen>0</minimumHdrPercentOfScreen>
+        <minimumLux>4000</minimumLux>
+        <timing>
+            <timeWindowSecs>0</timeWindowSecs>
+            <timeMaxSecs>0</timeMaxSecs>
+            <timeMinSecs>0</timeMinSecs>
+        </timing>
+        <thermalStatusLimit>critical</thermalStatusLimit>
+    </highBrightnessMode>
+    <autoBrightness enabled="true">
+        <brighteningLightDebounceMillis>2000</brighteningLightDebounceMillis>
+        <darkeningLightDebounceMillis>6000</darkeningLightDebounceMillis>
+        <luxToBrightnessMapping>
+            <mode>default</mode>
+            <setting>normal</setting>
+            <map>
+                <point>
+                    <first>0</first>
+                    <second>0.0239</second> <!-- 12.0 nits -->
+                </point>
+                <point>
+                    <first>1</first>
+                    <second>0.0239</second> <!-- 12.0 nits -->
+                </point>
+                <point>
+                    <first>2</first>
+                    <second>0.0359</second> <!-- 17.0 nits -->
+                </point>
+                <point>
+                    <first>3</first>
+                    <second>0.0550</second> <!-- 25.0 nits -->
+                </point>
+                <point>
+                    <first>4</first>
+                    <second>0.0672</second> <!-- 30.0 nits -->
+                </point>
+                <point>
+                    <first>5</first>
+                    <second>0.0790</second> <!-- 35.0 nits -->
+                </point>
+                <point>
+                    <first>10</first>
+                    <second>0.0909</second> <!-- 40.0 nits -->
+                </point>
+                <point>
+                    <first>15</first>
+                    <second>0.1435</second> <!-- 62.0 nits -->
+                </point>
+                <point>
+                    <first>20</first>
+                    <second>0.1979</second> <!-- 84.5 nits -->
+                </point>
+                <point>
+                    <first>25</first>
+                    <second>0.2536</second> <!-- 108.0 nits -->
+                </point>
+                <point>
+                    <first>30</first>
+                    <second>0.2759</second> <!-- 119.0 nits -->
+                </point>
+                <point>
+                    <first>35</first>
+                    <second>0.2759</second> <!-- 119.0 nits -->
+                </point>
+                <point>
+                    <first>40</first>
+                    <second>0.2759</second> <!-- 119.0 nits -->
+                </point>
+                <point>
+                    <first>45</first>
+                    <second>0.2840</second> <!-- 122.5 nits -->
+                </point>
+                <point>
+                    <first>50</first>
+                    <second>0.2840</second> <!-- 122.5 nits -->
+                </point>
+                <point>
+                    <first>100</first>
+                    <second>0.2922</second> <!-- 126.0 nits -->
+                </point>
+                <point>
+                    <first>300</first>
+                    <second>0.3115</second> <!-- 134.0 nits -->
+                </point>
+                <point>
+                    <first>500</first>
+                    <second>0.3507</second> <!-- 152.0 nits -->
+                </point>
+                <point>
+                    <first>1000</first>
+                    <second>0.4203</second> <!-- 178.0 nits -->
+                </point>
+                <point>
+                    <first>2000</first>
+                    <second>0.5919</second> <!-- 249.0 nits -->
+                </point>
+                <point>
+                    <first>2999</first>
+                    <second>1.0000</second> <!-- 420.0 nits -->
+                </point>
+                <point>
+                    <first>3000</first>
+                    <second>1.0000</second> <!-- 420.0 nits -->
+                </point>
+                <point>
+                    <first>4000</first>
+                    <second>1.1148</second> <!-- 468.0 nits -->
+                </point>
+                <point>
+                    <first>5000</first>
+                    <second>1.2263</second> <!-- 515.0 nits -->
+                </point>
+                <point>
+                    <first>6000</first>
+                    <second>1.3407</second> <!-- 563.0 nits -->
+                </point>
+                <point>
+                    <first>7000</first>
+                    <second>1.4545</second> <!-- 610.0 nits -->
+                </point>
+                <point>
+                    <first>8000</first>
+                    <second>1.5696</second> <!-- 658.0 nits -->
+                </point>
+                <point>
+                    <first>9000</first>
+                    <second>1.6837</second> <!-- 705.0 nits -->
+                </point>
+                <point>
+                    <first>10000</first>
+                    <second>1.7986</second> <!-- 753.0 nits -->
+                </point>
+                <point>
+                    <first>20000</first>
+                    <second>1.8531</second> <!-- 776.0 nits -->
+                </point>
+                <point>
+                    <first>40000</first>
+                    <second>1.9091</second> <!-- 800.0 nits -->
+                </point>
+            </map>
+        </luxToBrightnessMapping>
+    </autoBrightness>
+    <screenBrightnessRampFastDecrease>0.06</screenBrightnessRampFastDecrease>
+    <screenBrightnessRampFastIncrease>0.06</screenBrightnessRampFastIncrease>
+    <screenBrightnessRampSlowDecrease>0.04</screenBrightnessRampSlowDecrease>
+    <screenBrightnessRampSlowIncrease>0.04</screenBrightnessRampSlowIncrease>
+    <screenBrightnessRampIncreaseMaxMillis>3000</screenBrightnessRampIncreaseMaxMillis>
+    <screenBrightnessRampDecreaseMaxMillis>3000</screenBrightnessRampDecreaseMaxMillis>
+    <refreshRate>
+        <refreshRateZoneProfiles>
+            <refreshRateZoneProfile id="concurrent">
+                <refreshRateRange>
+                    <minimum>60</minimum>
+                    <maximum>60</maximum>
+                </refreshRateRange>
+            </refreshRateZoneProfile>
+        </refreshRateZoneProfiles>
+        <lowerBlockingZoneConfigs>
+            <defaultRefreshRate>120</defaultRefreshRate>
+            <blockingZoneThreshold>
+                <displayBrightnessPoint>
+                    <lux>200</lux>
+                    <nits>115.0</nits>
+                </displayBrightnessPoint>
+                <displayBrightnessPoint>
+                    <lux>2500</lux>
+                    <nits>122.5</nits>
+                </displayBrightnessPoint>
+            </blockingZoneThreshold>
+            <supportedModes>
+                <point>
+                    <first>60</first>
+                    <second>60</second>
+                </point>
+                <point>
+                    <first>120</first>
+                    <second>120</second>
+                </point>
+            </supportedModes>
+        </lowerBlockingZoneConfigs>
+    </refreshRate>
+    <supportsVrr>true</supportsVrr>
+    <dozeBrightnessSensorValueToBrightness>
+        <item>-1</item> <!-- 0: OFF -->
+        <item>0.0</item> <!-- 1: NIGHT, 2 nits  -->
+        <item>0.010</item> <!-- 2: LOW, 10 nits -->
+        <item>0.038</item> <!-- 3: HIGH, 32 nits -->
+        <item>0.064</item> <!-- 4: SUN, 53 nits -->
+    </dozeBrightnessSensorValueToBrightness>
     <densityMapping>
         <density>
             <height>1080</height>
