@@ -16,6 +16,24 @@
       "message": "```suggestion\n$(call soong_config_set,samsungCameraVars,extra_ids,52) # ID\u003d52 is telephoto\n```",
       "revId": "292fabd572e6c48d391d3d82082e314107768662",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c7aec056_87a10cb5",
+        "filename": "device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 35850
+      },
+      "writtenOn": "2026-01-18T16:15:33Z",
+      "side": 1,
+      "message": "Fix applied.",
+      "parentUuid": "7ee6cc67_49e96a0e",
+      "revId": "292fabd572e6c48d391d3d82082e314107768662",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
