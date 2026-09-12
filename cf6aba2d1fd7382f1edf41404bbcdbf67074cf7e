@@ -16,6 +16,24 @@
       "message": "Use same change-Id as the other one.",
       "revId": "cf6aba2d1fd7382f1edf41404bbcdbf67074cf7e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ef8ce49_883c89fa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 36094
+      },
+      "writtenOn": "2026-09-12T20:01:29Z",
+      "side": 1,
+      "message": "Will keep change ID different from r8s here, as r8s only adds the library, while here it is replaced with 64-bit. Will match y2s and z3s change IDs with this commit though. r8s will have additional commit that drops handful of 32-bit libraries.",
+      "parentUuid": "3614fc4a_64f6b7fb",
+      "revId": "cf6aba2d1fd7382f1edf41404bbcdbf67074cf7e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
